@@ -2,7 +2,7 @@ document.getElementById('login-btn').addEventListener('click', function() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    fetch('http://127.0.0.1:5000/login', {
+    fetch('https://your-vercel-app-url/api/login', { // Change this URL to your Vercel backend
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
