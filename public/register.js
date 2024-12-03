@@ -3,7 +3,7 @@ document.getElementById('register-btn').addEventListener('click', function() {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    fetch('http://127.0.0.1:5000/register', {
+    fetch('https://your-vercel-app-url/api/register', { // Change this URL to your Vercel backend
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -21,3 +21,4 @@ document.getElementById('register-btn').addEventListener('click', function() {
     })
     .catch(error => console.error('Error:', error));
 });
+
