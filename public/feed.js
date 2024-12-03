@@ -36,7 +36,7 @@ function displayPosts(posts) {
 
 // Fetch posts and display them
 function fetchPosts() {
-    fetch('http://127.0.0.1:5000/getPosts', {
+    fetch('https://your-vercel-app-url/api/getPosts', { // Change this URL to your Vercel backend
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -49,7 +49,7 @@ function fetchPosts() {
 
 // Like a post
 function likePost(postId) {
-    fetch('http://127.0.0.1:5000/likePost', {
+    fetch('https://your-vercel-app-url/api/likePost', { // Change this URL to your Vercel backend
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -68,7 +68,7 @@ function likePost(postId) {
 function commentPost(postId) {
     const comment = prompt('Enter your comment:');
     if (comment) {
-        fetch('http://127.0.0.1:5000/commentPost', {
+        fetch('https://your-vercel-app-url/api/commentPost', { // Change this URL to your Vercel backend
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -94,7 +94,7 @@ document.getElementById('create-post').addEventListener('click', function() {
         return;
     }
 
-    fetch('http://127.0.0.1:5000/createPost', {
+    fetch('https://your-vercel-app-url/api/createPost', { // Change this URL to your Vercel backend
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -112,3 +112,4 @@ document.getElementById('create-post').addEventListener('click', function() {
 
 // Initial load of posts
 fetchPosts();
+
