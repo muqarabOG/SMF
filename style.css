@@ -1,0 +1,278 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+/* Container for the Feed */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Full Feed Layout */
+.feed-container {
+    width: 100%; /* Make it full width */
+    max-width: 1200px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode .feed-container {
+    background-color: #2a2a2a;
+}
+
+/* Post Creation Section */
+.new-post-container {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px; /* Increased padding for a bigger input area */
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 120px; /* Increased height for a bigger area */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode textarea {
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker Blue */
+}
+
+/* Title Styles */
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Post Styling */
+.post {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode .post {
+    background-color: #333;
+}
+
+.post .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post img.avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.post .content {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+body.dark-mode .post .content {
+    color: #f4f4f4;
+}
+
+/* Action Buttons (Like, Comment, Share) */
+.post .actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.post button {
+    padding: 5px 10px;
+    background-color: #007BFF; /* Blue */
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.post button:hover {
+    background-color: #0056b3; /* Darker Blue */
+}
+
+/* Dark Mode Toggle Button */
+.theme-toggle-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .theme-toggle-btn {
+    color: #f4f4f4;
+}
+
+.theme-toggle-btn:hover {
+    color: #0056b3;
+}
+
+/* Avatar & Post Styling */
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.post-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Additional styles for comments and like buttons */
+.comment-container {
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+.comment {
+    margin-bottom: 10px;
+}
+
+.comment textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+    resize: none;
+}
+
+.like-comment-btns button {
+    padding: 8px 20px;
+    margin-right: 10px;
+}
+
+/* Feed Structure Improvements */
+.feed-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Full-page feed layout */
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .feed-container {
+        width: 90%;
+    }
+
+    .post img.avatar {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Login/Signup Page Styling */
+.login-container, .signup-container {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+body.dark-mode .login-container, body.dark-mode .signup-container {
+    background-color: #2a2a2a;
+    color: white;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+body.dark-mode input[type="text"], body.dark-mode input[type="password"], body.dark-mode input[type="email"] {
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    text-align: center;
+    color: #007BFF;
+}

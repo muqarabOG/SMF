@@ -1,0 +1,29 @@
+{
+    "posts": [
+        {
+            "content": "This is my first post!",
+            "postId": 1,
+            "username": "Alice"
+        },
+        {
+            "content": "Learning C++ with frontend integration.",
+            "postId": 2,
+            "username": "Bob"
+        },
+        {
+            "content": "C++ is fun!",
+            "postId": 3,
+            "username": "Charlie"
+        },
+        {
+            "content": "Hey, how is everyone?",
+            "postId": 4,
+            "username": "Alice"
+        },
+        {
+            "content": "Just completed a project.",
+            "postId": 5,
+            "username": "Bob"
+        }
+    ]
+}
