@@ -1,0 +1,24 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "api/server.py",
+        "use": "@vercel/python"  // Backend: Python API
+      },
+      {
+        "src": "public/**/*",
+        "use": "@vercel/static"  // Serve all static files (HTML, CSS, JS)
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/api/server.py"  // Routes requests to /api/* to server.py
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/$1"  // Routes all other requests (frontend) to static files
+      }
+    ]
+  }
+  
